@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SKARPETKISMP | Sklep</title>
+<style>
+:root{--bg:#080a10;--panel:#10131c;--panel2:#151925;--line:#282e40;--text:#f5f7ff;--muted:#9299ad;--accent:#8b5cf6;--accent2:#6d42df}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}
+header{position:sticky;top:0;z-index:10;background:#0a0c13eF;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 7%}
+.logo{font-size:24px;font-weight:900;letter-spacing:.5px}.logo b{color:var(--accent)}
+nav{display:flex;align-items:center;gap:24px}nav a{color:#bfc5d5;text-decoration:none;font-size:14px}nav a:hover{color:#fff}
+.server{border:1px solid #343b50;padding:10px 14px;border-radius:10px;color:#cfd4e2!important}
+.hero{min-height:440px;padding:85px 7%;display:flex;align-items:center;background:radial-gradient(circle at 75% 20%,#3b2277 0,transparent 35%),linear-gradient(135deg,#0b0d15,#111426 55%,#0b0d15)}
+.hero-content{max-width:700px}.tag{display:inline-block;padding:8px 13px;border-radius:99px;background:#17132a;border:1px solid #44346e;color:#bca7ff;font-size:13px;font-weight:700}
+h1{font-size:clamp(42px,6vw,72px);line-height:1;margin:18px 0 16px}h1 span{color:var(--accent)}.hero p{color:#aeb5c8;font-size:18px;line-height:1.6;max-width:620px}
+.btn{display:inline-block;border:0;border-radius:11px;padding:13px 20px;background:var(--accent);color:white;text-decoration:none;font-weight:800;cursor:pointer;box-shadow:0 8px 25px #0005}.btn:hover{background:var(--accent2);transform:translateY(-1px)}
+main{padding:55px 7%}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}.head h2{font-size:30px;margin:0}.head p{color:var(--muted);margin:7px 0 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:24px;position:relative;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#5c4b90}.card:before{content:"";position:absolute;inset:-80px auto auto -40px;width:130px;height:130px;background:#8b5cf633;border-radius:50%;filter:blur(25px)}
+.icon{height:100px;display:grid;place-items:center;font-size:58px;position:relative}.card h3{margin:12px 0 8px;font-size:19px}.desc{color:var(--muted);font-size:14px;min-height:40px;line-height:1.45}.bottom{display:flex;justify-content:space-between;align-items:center;margin-top:22px}.price{font-size:22px;font-weight:900}.smallbtn{padding:10px 13px;border-radius:9px;background:#26213a;color:#dcd5ff;border:1px solid #473b68;cursor:pointer;font-weight:700}.smallbtn:hover{background:var(--accent);color:#fff}
+.info{margin-top:55px;background:#0f121b;border:1px solid var(--line);border-radius:18px;padding:28px}.info h2{margin-top:0}.info p{color:var(--muted);line-height:1.7}
+footer{padding:35px 7%;border-top:1px solid var(--line);color:#70778a;text-align:center;font-size:13px}
+.modal{position:fixed;z-index:20;inset:0;background:#000b;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.box{width:100%;max-width:430px;background:#111521;border:1px solid #343b50;border-radius:18px;padding:26px}.close{float:right;border:0;background:none;color:#8991a5;font-size:25px;cursor:pointer}.box h2{margin:0 30px 6px 0}.selected{color:#a997ff;font-weight:800;margin-bottom:20px}label{display:block;font-size:13px;color:#aeb5c8;margin-bottom:7px}input{width:100%;background:#090c13;border:1px solid #343b50;color:#fff;border-radius:10px;padding:13px;margin-bottom:14px;outline:none}input:focus{border-color:var(--accent)}.full{width:100%}.note{font-size:12px;color:#70778a;line-height:1.5;margin-top:12px}
+@media(max-width:650px){header{padding:0 5%}nav a:not(.server){display:none}.hero,main{padding-left:5%;padding-right:5%}.hero{min-height:400px}.head{display:block}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">SKARPETKISMP</div>
+  <nav><a href="#sklep">Sklep</a><a href="#jak">Jak działa?</a><a class="server" href="#">🎮 Serwer: ONLINE</a></nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="tag">⚡ SKLEP SERWEROWY • JAVA 1.21.3</span>
+    <h1>Witaj w <span>SKARPETKISMP</span></h1>
+    <p>Odbierz klucze do specjalnych skrzyń i wykorzystaj je na naszym serwerze Minecraft.</p>
+    <a class="btn" href="#sklep">Zobacz skrzynie ↓</a>
+  </div>
+</section>
+
+<main id="sklep">
+  <div class="head"><div><h2>🗝️ Klucze do skrzyń</h2><p>Wybierz skrzynię, którą chcesz otworzyć.</p></div></div>
+  <div class="grid">
+    <article class="card"><div class="icon">🧦</div><h3>Skrzynia Skarpetki</h3><div class="desc">Specjalna skrzynia z wyjątkowymi nagrodami.</div><div class="bottom"><div class="price">30 zł</div><button class="smallbtn" onclick="buy('Skrzynia Skarpetki','30 zł')">Kup</button></div></article>
+    <article class="card"><div class="icon">👑</div><h3>Skrzynia Legendarna</h3><div class="desc">Legenda wśród skrzyń — odbierz swój klucz.</div><div class="bottom"><div class="price">20 zł</div><button class="smallbtn" onclick="buy('Skrzynia Legendarna','20 zł')">Kup</button></div></article>
+    <article class="card"><div class="icon">⚒️</div><h3>Skrzynia Spawnerów</h3><div class="desc">Klucz do skrzyni z nagrodami związanymi ze spawnerami.</div><div class="bottom"><div class="price">5 zł</div><button class="smallbtn" onclick="buy('Skrzynia Spawnerów','5 zł')">Kup</button></div></article>
+    <article class="card"><div class="icon">🔮</div><h3>Skrzynia Epicka</h3><div class="desc">Epickie nagrody czekają na otwarcie.</div><div class="bottom"><div class="price">10 zł</div><button class="smallbtn" onclick="buy('Skrzynia Epicka','10 zł')">Kup</button></div></article>
+    <article class="card"><div class="icon">💠</div><h3>Skrzynia Rzadka</h3><div class="desc">Rzadkie nagrody dostępne po użyciu klucza.</div><div class="bottom"><div class="price">5 zł</div><button class="smallbtn" onclick="buy('Skrzynia Rzadka','5 zł')">Kup</button></div></article>
+  </div>
+
+  <section class="info" id="jak">
+    <h2>Jak działa zakup?</h2>
+    <p>1. Wybierz interesujący Cię klucz. &nbsp; 2. Podaj nick Minecraft. &nbsp; 3. Po podłączeniu płatności zamówienie zostanie przekazane do serwera. &nbsp; 4. Klucz zostanie automatycznie dostarczony na konto gracza.</p>
+  </section>
+</main>
+
+<footer>© 2026 SKARPETKISMP • Sklep serwerowy • Minecraft Java 1.21.3</footer>
+
+<div class="modal" id="modal">
+ <div class="box">
+  <button class="close" onclick="closeModal()">×</button>
+  <h2 id="name"></h2><div class="selected" id="price"></div>
+  <label for="nick">Nick Minecraft</label>
+  <input id="nick" maxlength="16" placeholder="Wpisz swój nick">
+  <button class="btn full" onclick="nextStep()">Przejdź dalej</button>
+  <div class="note">Wersja demonstracyjna sklepu — płatności i automatyczne wydawanie kluczy zostaną podłączone w kolejnym etapie.</div>
+ </div>
+</div>
+<script>
+function buy(n,p){document.getElementById('name').textContent=n;document.getElementById('price').textContent=p;document.getElementById('nick').value='';document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+function nextStep(){let n=document.getElementById('nick').value.trim();if(!n){alert('Wpisz nick Minecraft.');return}alert('Nick: '+n+'\\n\\nNastępny etap: podłączenie płatności i automatycznego wydawania klucza.')}
+</script>
+</body>
+</html>
