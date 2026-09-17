@@ -1,5 +1,5 @@
 {
   "name": "skarpetkismp",
-  "main": "worker.js",
+  "main": "./worker.js",
   "compatibility_date": "2026-09-16"
 }
